@@ -24,6 +24,10 @@ bowlingGame.prototype = {
 			{
 				this.score += this.rolls[roll];
 			}
+			if (this.rolls[roll -1] == 10 || this.rolls[roll -2] == 10)
+			{
+				this.score += this.rolls[roll];
+			}
 		}
 		return this.score;
 	},
