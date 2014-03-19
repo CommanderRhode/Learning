@@ -19,8 +19,8 @@ bowlingGame.prototype = {
 		return this.score;
 	},
 
-	roll: function() {
-		this.score += 1;
+	roll: function(pins) {
+		this.score += pins;
 	}
 };
 
