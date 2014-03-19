@@ -9,12 +9,18 @@
  */
 function bowlingGame() {
 
+	this.score = 0;
+
 };
 
 bowlingGame.prototype = {
 
 	scoreBowling: function() {
-		return 0;
+		return this.score;
+	},
+
+	roll: function() {
+		this.score += 1;
 	}
 };
 
