@@ -24,3 +24,11 @@ BowlingGameTest.prototype.testSingleSpare = function() {
 	game.roll(3);
 	assertEquals(16, game.scoreBowling());
 }
+
+BowlingGameTest.prototype.testSingleStrike = function() {
+	var game = new bowlingGame("SingleStrike");
+	game.roll(10);
+	game.roll(4);
+	game.roll(5);
+	assertEquals(28, game.scoreBowling());
+}
