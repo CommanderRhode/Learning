@@ -14,7 +14,7 @@ function bowlingGame() {
 bowlingGame.prototype = {
 
 	scoreBowling: function() {
-		// TODO: Calculate score for bowling game
+		return 0;
 	}
 };
 
