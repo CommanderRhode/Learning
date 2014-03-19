@@ -32,3 +32,12 @@ BowlingGameTest.prototype.testSingleStrike = function() {
 	game.roll(5);
 	assertEquals(28, game.scoreBowling());
 }
+
+BowlingGameTest.prototype.testPerfectGame = function() {
+	var game = new bowlingGame("PerfectGame");
+	for (var rollIndex = 0; rollIndex < 12; rollIndex ++)
+	{
+		game.roll(10);
+	}
+	assertEquals(300, game.scoreBowling());
+}
