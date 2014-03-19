@@ -6,4 +6,5 @@ BowlingGameTest = TestCase("BowlingGame");
 BowlingGameTest.prototype.testStub = function() {
 	// TODO: Implement some tests
 	// expectEquals(x, y);
+	assertTrue(false);
 };
